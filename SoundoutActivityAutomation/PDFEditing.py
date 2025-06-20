@@ -4,7 +4,7 @@ import random
 
 soundOutList = [] #sets up list for words
 
-with open("stink.txt", "r") as file: #reads file and puts to list, removing whitespace. "r" is for read only
+with open("SoundOutInput.txt", "r") as file: #reads file and puts to list, removing whitespace. "r" is for read only
     for line in file:
         soundOutList.append(line.strip().split("\t")) #formats the words into the list (use * when printing or writing to new file to remove [""]
 
