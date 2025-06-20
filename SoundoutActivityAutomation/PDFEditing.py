@@ -2,20 +2,15 @@
 #Louis Faunce - made 06/20/2025
 import random
 
-inputFile = open("SoundOutInput.txt") #read input file with words
-print(inputFile.read()) #test if can read
+soundOutList = [] #sets up list for words
 
-soundOutLines = inputFile.readlines() #variable to get specific lines (1-4 are level 1, 5-9 is 2 so on
-
-levelOne = [soundOutLines[0], soundOutLines[1], soundOutLines[2], soundOutLines[3]] #array for level one words
-#test if this works to make array of each line in text file
-
-#close file
-inputFile.close()
+with open("stink.txt", "r") as file: #reads file and puts to list, removing whitespace. "r" is for read only
+    for line in file:
+        soundOutList.append(line.strip().split("\t")) #formats the words into the list (use * when printing or writing to new file to remove [""]
 
 #function class to run randomizing
 def randomSpelling():
-
+    print(''.join(random.sample(*soundOutList[1],len(*soundOutList[1])))) #edit to use loop and edit each string within the list
     return 0
 
 #function for making words into katakana
