@@ -8,31 +8,13 @@ with open("SoundOutInput.txt", "r") as file: #reads file and puts to list, remov
     for line in file:
         soundOutList.append(line.strip().split("\t")) #formats the words into the list (use * when printing or writing to new file to remove [""]
 
+randomizeList = soundOutList.copy() #sets up list for randomized words
 
 def randomSpelling():
-    for i in range(len(soundOutList)): #loops through each word in the list and randomizes
-        soundOutList[i]= ''.join(random.sample(*soundOutList[i],len(*soundOutList[i]))) 
-
-
-randomSpelling()
-
-levelOneWords = soundOutList[0:4] #first four words, level 1 difficulty, followed by setting up lists for each level
-levelTwoWords = soundOutList[5:9] 
-levelThreeWords = soundOutList[10:14] 
-levelFourWords = soundOutList[15:19] 
-levelFiveWords = soundOutList[20:22] 
-
-
-
-
-#function for making words into katakana
-def katakanaize():
-
-    return 0 
-
-
-
-#format for output to be sent to new file will be "kana ・ jumbled word"
+    #randomizeList = soundOutList.copy()
+    for i in range(len(randomizeList)): #loops through each word in the list and randomizes
+        randomizeList[i]= ''.join(random.sample(*randomizeList[i],len(*randomizeList[i]))) 
+    return randomizeList #returns the randomized list
 
 def printTests():
     print("Sound Out Activity Words:", *soundOutList) #prints header
@@ -41,3 +23,23 @@ def printTests():
     print("Level 3 Words: ", *levelThreeWords) #prints level 3 words
     print("Level 4 Words: ", *levelFourWords) #prints level 4 words
     print("Level 5 Words: ", *levelFiveWords) #prints level 5 words
+
+def katakanaize():
+
+    return 0 
+
+randomSpelling()
+
+levelOneWords = randomizeList[0:4] #first four words, level 1 difficulty, followed by setting up lists for each level
+levelTwoWords = randomizeList[5:9] 
+levelThreeWords = randomizeList[10:14] 
+levelFourWords = randomizeList[15:19] 
+levelFiveWords = randomizeList[20:22] 
+
+printTests() #prints the lists to the console
+
+
+
+
+#format for output to be sent to new file will be "kana ・ jumbled word"
+
