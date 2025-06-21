@@ -30,6 +30,7 @@ def randomSpelling(): #self explanatory function to randomize the words in the l
 
     for i in range(len(randomizeList)): #loops through each word in the list and randomizes
         randomizeList[i]= ''.join(random.sample(*randomizeList[i],len(*randomizeList[i]))) 
+        
     return randomizeList #returns the randomized list
 
 def katakanaize(): #turn og list to kana
@@ -38,7 +39,7 @@ def katakanaize(): #turn og list to kana
         katakana = p2k(g2p(*soundOutList[i]))
         #print(katakana) #prints the kana to console for testing
         pronunciationList.append(katakana)
-
+        
     return pronunciationList #returns the kana list
 
 def printTests(): #tests to make sure lists work
