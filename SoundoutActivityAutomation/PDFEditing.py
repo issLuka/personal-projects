@@ -45,7 +45,7 @@ def printTests(): #tests to make sure lists work
     print("Level 4 Words: ", *levelFourWords, *levelFourKana) #prints level 4 words
     print("Level 5 Words: ", *levelFiveWords, *levelFiveKana) #prints level 5 words
     
-def addSpaceToWords(): #will add words to each level
+def addSpaceToWords(): #will add spaces to words in each level
     for i in range(len(levelOneWords)):
         levelOneWords[i] = " ".join(levelOneWords[i])
     for i in range(len(levelTwoWords)):
