@@ -33,7 +33,7 @@ def katakanaize(): #turn og list to kana
         katakana = p2k(g2p(*soundOutList[i]))
         #print(katakana) #prints the kana to console for testing
         pronunciationList.append(katakana)
-
+        
     return pronunciationList #returns the kana list
 
 def printTests(): #tests to make sure lists work

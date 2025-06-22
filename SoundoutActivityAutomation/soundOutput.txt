@@ -1,28 +1,28 @@
 level 1 words:
-イーズ ・ ehest
-ワン ・ neo
-ユー ・ ouy
-スキー ・ sik
+イーズ ・ etehs
+ワン ・ noe
+ユー ・ oyu
+スキー ・ ksi
 
 level 2 words:
-ディナー ・ ndneri
-ビー ・ eeb
-ムーン ・ oonm
-マス ・ amth
+ディナー ・ dinrne
+ビー ・ ebe
+ムーン ・ onmo
+マス ・ htam
 
 level 3 words:
-イングリッシュ ・ hEgilsn
-オクトーバー ・ beocrOt
-ヴァイオリン ・ onivil
-バースデー ・ dyrtbaih
+イングリッシュ ・ hsiElng
+オクトーバー ・ ecbtOor
+ヴァイオリン ・ oiilvn
+バースデー ・ daybhrti
 
 level 4 words:
-エコノミック ・ onccmeoi
-ブルー ・ leub
-フォーン ・ pehon
-ミュージウム ・ eummus
+エコノミック ・ ocoicenm
+ブルー ・ lbeu
+フォーン ・ hpoen
+ミュージウム ・ museum
 
 level 5 words:
-カリグラフィー ・ ahlgraciypl
-ブレックファスト ・ akbsrefat
+カリグラフィー ・ lahpargicly
+ブレックファスト ・ btkeafsar
 
