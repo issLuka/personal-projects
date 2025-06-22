@@ -20,16 +20,11 @@ with open("SoundOutInput.txt", "r") as file: #reads file and puts to list, remov
 randomizeList = soundOutList.copy() #sets up list for randomized words copying og list
 
 #------------------------------------------------------------------------------
-#test
-#testKana = p2k(g2p(*soundOutList[3]))
-#print(testKana) #prints the randomized list to console for testing
-#------------------------------------------------------------------------------
-
-#------------------------------------------------------------------------------
 def randomSpelling(): #self explanatory function to randomize the words in the list
 
     for i in range(len(randomizeList)): #loops through each word in the list and randomizes
-        randomizeList[i]= ''.join(random.sample(*randomizeList[i],len(*randomizeList[i]))) 
+        randomizeList[i] = ''.join(random.sample(*randomizeList[i],len(*randomizeList[i])))
+
     return randomizeList #returns the randomized list
 
 def katakanaize(): #turn og list to kana
@@ -42,12 +37,15 @@ def katakanaize(): #turn og list to kana
     return pronunciationList #returns the kana list
 
 def printTests(): #tests to make sure lists work
+    
     print("Sound Out Activity Words:", *soundOutList) #prints header
     print("Level 1 Words: ", *levelOneWords, *levelOneKana) #prints level 1 words
     print("Level 2 Words: ", *levelTwoWords, *levelTwoKana) #prints level 2 words
     print("Level 3 Words: ", *levelThreeWords, *levelThreeKana) #prints level 3 words
     print("Level 4 Words: ", *levelFourWords, *levelFourKana) #prints level 4 words
     print("Level 5 Words: ", *levelFiveWords, *levelFiveKana) #prints level 5 words
+    
+            
 #------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------
@@ -69,7 +67,43 @@ levelThreeKana = pronunciationList[10:14]
 levelFourKana = pronunciationList[15:19]
 levelFiveKana = pronunciationList[20:22]
 #------------------------------------------------------------------------------
-
-printTests() #prints the lists to the console
-
+#def randomSpellCheck():
+    #spellCheckBool = False 
+    #while spellCheckBool == False: #loops through each word in the list
+       # if levelOneWords[0:4] == soundOutList[0:4]: 
+          #  randomizeList[0:4] = ''.join(random.sample(*randomizeList[0:4],len(*randomizeList[0:4])))
+        #elif levelTwoWords[5:9] == soundOutList[5:9]: 
+       #     randomizeList[5:9] = ''.join(random.sample(*randomizeList[5:9],len(*randomizeList[5:9])))
+       # elif levelThreeWords[10:14] == soundOutList[10:14]: 
+           # randomizeList[10:14] = ''.join(random.sample(*randomizeList[10:14],len(*randomizeList[10:14])))
+        #elif levelFourWords[15:19] == soundOutList[15:19]: 
+            #randomizeList[15:19] = ''.join(random.sample(*randomizeList[15:19],len(*randomizeList[15:19])))
+        #elif levelFiveWords[20:22] == soundOutList[20:22]: 
+           # randomizeList[20:22] = ''.join(random.sample(*randomizeList[20:22],len(*randomizeList[20:22])))
+        #else:
+            #spellCheckBool = True
+#------------------------------------------------------------------------------
+#randomSpellCheck() 
+#printTests() #prints the lists to the console
+#print(soundOutList[0:4]) #prints the first four words to console for testing
+#print(pronunciationList[0:4]) #prints the first four kana to console for
+#print(levelOneWords)
 #write to new file " randomized word  ・ kana pronunciation"
+
+with open("soundOutput.txt", "w", encoding='utf8') as file: #writes the words and kana to a new file
+    file.write("level 1 words:\n")
+    for i in range(len(levelOneWords)):
+        file.write(f"{levelOneKana[i]} ・ {levelOneWords[i]}\n") #writes the level 1 words and kana to the file
+    file.write("\nlevel 2 words:\n")
+    for i in range(len(levelTwoWords)):
+        file.write(f"{levelTwoKana[i]} ・ {levelTwoWords[i]}\n")
+    file.write("\nlevel 3 words:\n")
+    for i in range(len(levelThreeWords)):
+        file.write(f"{levelThreeKana[i]} ・ {levelThreeWords[i]}\n")  
+    file.write("\nlevel 4 words:\n")
+    for i in range(len(levelFourWords)):
+        file.write(f"{levelFourKana[i]} ・ {levelFourWords[i]}\n")
+    file.write("\nlevel 5 words:\n")
+    for i in range(len(levelFiveWords)):
+        file.write(f"{levelFiveKana[i]} ・ {levelFiveWords[i]}\n")
+    file.write("\n")
