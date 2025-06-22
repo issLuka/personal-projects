@@ -45,7 +45,18 @@ def printTests(): #tests to make sure lists work
     print("Level 4 Words: ", *levelFourWords, *levelFourKana) #prints level 4 words
     print("Level 5 Words: ", *levelFiveWords, *levelFiveKana) #prints level 5 words
     
-            
+def addSpaceToWords(): #will add words to each level
+    for i in range(len(levelOneWords)):
+        levelOneWords[i] = " ".join(levelOneWords[i])
+    for i in range(len(levelTwoWords)):
+        levelTwoWords[i] = " ".join(levelTwoWords[i])
+    for i in range(len(levelThreeWords)):
+        levelThreeWords[i] = " ".join(levelThreeWords[i])
+    for i in range(len(levelFourWords)):
+        levelFourWords[i] = " ".join(levelFourWords[i])
+    for i in range(len(levelFiveWords)):
+        levelFiveWords[i] = " ".join(levelFiveWords[i])
+
 #------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------
@@ -88,7 +99,8 @@ levelFiveKana = pronunciationList[20:22]
 #print(soundOutList[0:4]) #prints the first four words to console for testing
 #print(pronunciationList[0:4]) #prints the first four kana to console for
 #print(levelOneWords)
-#write to new file " randomized word  ・ kana pronunciation"
+
+addSpaceToWords()
 
 with open("soundOutput.txt", "w", encoding='utf8') as file: #writes the words and kana to a new file
     file.write("level 1 words:\n")
