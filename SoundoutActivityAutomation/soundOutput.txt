@@ -1,28 +1,28 @@
 level 1 words:
-イーズ ・ t h e e s
-ワン ・ n e o
-ユー ・ u o y
-スキー ・ i s k
+1. フォー ・ o f r
+2. バイ ・ b y u
+3. セー ・ y s a
+4. コール ・ l l a c
 
 level 2 words:
-ディナー ・ r n d i n e
-ビー ・ e e b
-ムーン ・ o m n o
-マス ・ m a t h
+1. アイデア ・ i e d a
+2. ベーク ・ a k e b
+3. ホープ ・ p e h o
+4. ウォーク ・ k l a w
 
 level 3 words:
-イングリッシュ ・ E g i s h l n
-オクトーバー ・ b r t o O c e
-ヴァイオリン ・ v i o l i n
-バースデー ・ t a b y i d r h
+1. ベーカリー ・ y b k e r a
+2. ノー ・ k o w n
+3. ストーリー ・ t r s y o
+4. ブックレット ・ o l e b k t o
 
 level 4 words:
-エコノミック ・ c n m o c e o i
-ブルー ・ b e l u
-フォーン ・ o e n p h
-ミュージウム ・ m m s u e u
+1. チョイス ・ c o c i h e
+2. プログラム ・ m r p o a r g
+3. メモリアル ・ i e m r m l a o
+4. ショック ・ c k o h s
 
 level 5 words:
-カリグラフィー ・ i l a c g y l h p a r
-ブレックファスト ・ t b k e r s a f a
+1. ハリテージ ・ t a r i h e e g
+2. アスペッシュ ・ i y e c p a s l l e
 

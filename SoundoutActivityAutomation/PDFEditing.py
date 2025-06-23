@@ -101,21 +101,34 @@ levelFiveKana = pronunciationList[20:22]
 #print(levelOneWords)
 
 addSpaceToWords()
-
+levelCounter = 0
 with open("soundOutput.txt", "w", encoding='utf8') as file: #writes the words and kana to a new file
     file.write("level 1 words:\n")
     for i in range(len(levelOneWords)):
-        file.write(f"{levelOneKana[i]} ・ {levelOneWords[i]}\n") #writes the level 1 words and kana to the file
+        levelCounter += 1 #increments the level counter
+        file.write(f"{levelCounter}. {levelOneKana[i]} ・ {levelOneWords[i]}\n") #writes the level 1 words and kana to the file
+        if levelCounter >= 4:
+            levelCounter = 0 
     file.write("\nlevel 2 words:\n")
     for i in range(len(levelTwoWords)):
-        file.write(f"{levelTwoKana[i]} ・ {levelTwoWords[i]}\n")
+        levelCounter += 1
+        file.write(f"{levelCounter}. {levelTwoKana[i]} ・ {levelTwoWords[i]}\n")
+        if levelCounter >= 4:
+            levelCounter = 0 
     file.write("\nlevel 3 words:\n")
     for i in range(len(levelThreeWords)):
-        file.write(f"{levelThreeKana[i]} ・ {levelThreeWords[i]}\n")  
+        levelCounter += 1
+        file.write(f"{levelCounter}. {levelThreeKana[i]} ・ {levelThreeWords[i]}\n")  
+        if levelCounter >= 4:
+            levelCounter = 0 
     file.write("\nlevel 4 words:\n")
     for i in range(len(levelFourWords)):
-        file.write(f"{levelFourKana[i]} ・ {levelFourWords[i]}\n")
+        levelCounter += 1
+        file.write(f"{levelCounter}. {levelFourKana[i]} ・ {levelFourWords[i]}\n")
+        if levelCounter >= 4:
+            levelCounter = 0 
     file.write("\nlevel 5 words:\n")
     for i in range(len(levelFiveWords)):
-        file.write(f"{levelFiveKana[i]} ・ {levelFiveWords[i]}\n")
+        levelCounter += 1
+        file.write(f"{levelCounter}. {levelFiveKana[i]} ・ {levelFiveWords[i]}\n")
     file.write("\n")
