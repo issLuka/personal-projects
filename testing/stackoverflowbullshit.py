@@ -8,17 +8,22 @@ with open("SoundOutInput.txt", "r") as file: #reads file and puts to list, remov
 
 randomizeList = soundOutList.copy() #sets up list for randomized words copying og list
 
-def randomSpelling(words: list): #self explanatory function to randomize the words in the list
-    listCopy = words.copy()
-    for i in range(len(listCopy)):
-        listCopy[i] = ''.join(random.sample(*listCopy[i],len(*listCopy[i]))) #randomizes each word in the list
-        if listCopy[i] != words[i]:
-            words[i] = listCopy[i] #if the randomized word is the same as the original, it will not change it
-            print(words[i]) #prints the word to console for testing
-
+def randomSpellingAndCheck(): #self explanatory function to randomize the words in the list
     
-   
-randomSpelling(randomizeList) #calls the randomSpelling function to randomize the words
+
+    for i in range(len(randomizeList)):
+        randomizeList[i] = ''.join(random.sample(*randomizeList[i],len(*randomizeList[i]))) #randomizes each word in the list
+    # Check if the all words are the same as the original and if so, randomize again
+    while all(word == ''.join(randomizeList[i]) for i, word in enumerate(soundOutList)):
+        for i in range(len(randomizeList)):
+            randomizeList[i] = ''.join(random.sample(*randomizeList[i],len(*randomizeList[i])))
+    
+    return randomizeList #returns the randomized list
+
+  
+            
+
+randomSpellingAndCheck() #calls the randomSpelling function to randomize the randomizeList
 
 levelOneWords = randomizeList[0:4] #first four randomized words, level 1 difficulty, followed by setting up lists for each level
 levelTwoWords = randomizeList[5:9] 
@@ -38,10 +43,8 @@ def addSpaceToWords(): #will add words to each level
     for i in range(len(levelFiveWords)):
         levelFiveWords[i] = " ".join(levelFiveWords[i])
 
-addSpaceToWords()
+#addSpaceToWords()
 
 
-
-
-print("Original List:", *soundOutList)
-#print("Randomized List:\n", *levelOneWords, "\n", *levelTwoWords, "\n", *levelThreeWords, "\n", *levelFourWords, "\n", *levelFiveWords)
+#print("Original List:", *soundOutList)
+print("Randomized List:\n", *levelOneWords, "\n", *levelTwoWords, "\n", *levelThreeWords, "\n", *levelFourWords, "\n", *levelFiveWords)
