@@ -8,22 +8,24 @@ with open("SoundOutInput.txt", "r") as file: #reads file and puts to list, remov
 
 randomizeList = soundOutList.copy() #sets up list for randomized words copying og list
 
-def randomSpellingAndCheck(): #self explanatory function to randomize the words in the list
-    
+def randomSpelling(): #self explanatory function to randomize the words in the list
 
     for i in range(len(randomizeList)):
         randomizeList[i] = ''.join(random.sample(*randomizeList[i],len(*randomizeList[i]))) #randomizes each word in the list
-    # Check if the all words are the same as the original and if so, randomize again
-    while all(word == ''.join(randomizeList[i]) for i, word in enumerate(soundOutList)):
-        for i in range(len(randomizeList)):
-            randomizeList[i] = ''.join(random.sample(*randomizeList[i],len(*randomizeList[i])))
-    
+
     return randomizeList #returns the randomized list
 
-  
-            
+randomSpelling() #randomizes spelling in list
 
-randomSpellingAndCheck() #calls the randomSpelling function to randomize the randomizeList
+def spellCheck():
+    for i in range(len(randomizeList)):
+        check = all(x == y for x, y in zip(soundOutList, randomizeList))
+        if check == True:
+            randomSpelling()
+        else:
+            break            
+
+spellCheck() #checks the spelling if same as og list
 
 levelOneWords = randomizeList[0:4] #first four randomized words, level 1 difficulty, followed by setting up lists for each level
 levelTwoWords = randomizeList[5:9] 
