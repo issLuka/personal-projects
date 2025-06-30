@@ -7,7 +7,7 @@ with open("SoundOutInput.txt", "r") as file: #reads file and puts to list, remov
         soundOutList.append(line.strip().split("\t")) #formats the words into the list (use * when printing or writing to new file to remove [""]
 
 randomizeList = soundOutList.copy() #sets up list for randomized words copying og list
-
+soundOutCopy = soundOutList.copy() #copy of original list for spell checking
 def randomSpelling(): #self explanatory function to randomize the words in the list
 
     for i in range(len(randomizeList)):
@@ -19,7 +19,7 @@ randomSpelling() #randomizes spelling in list
 
 def spellCheck():
     for i in range(len(randomizeList)):
-        check = all(x == y for x, y in zip(soundOutList, randomizeList))
+        check = all(x == y for x, y in zip(soundOutCopy, randomizeList))
         if check == True:
             randomSpelling()
         else:
@@ -48,5 +48,5 @@ def addSpaceToWords(): #will add words to each level
 #addSpaceToWords()
 
 
-#print("Original List:", *soundOutList)
+print("Original List:", *soundOutList)
 print("Randomized List:\n", *levelOneWords, "\n", *levelTwoWords, "\n", *levelThreeWords, "\n", *levelFourWords, "\n", *levelFiveWords)

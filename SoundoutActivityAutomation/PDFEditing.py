@@ -101,6 +101,7 @@ levelFiveKana = pronunciationList[20:22]
 #print(levelOneWords)
 
 addSpaceToWords()
+
 levelCounter = 0
 with open("soundOutput.txt", "w", encoding='utf8') as file: #writes the words and kana to a new file
     file.write("level 1 words:\n")

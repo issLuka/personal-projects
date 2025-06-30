@@ -1,12 +1,12 @@
-for
-buy
-say
-call
+dog
+six
+november
+monday
 
-idea
-bake
-hope
-walk
+dinner
+apple
+game
+book
 
 bakery
 know

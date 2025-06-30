@@ -1,28 +1,28 @@
 level 1 words:
-1. フォー ・ o f r
-2. バイ ・ b y u
-3. セー ・ y s a
-4. コール ・ l l a c
+1. ドッグ ・ o d g
+2. シックス ・ i x s
+3. ノーベンバー ・ r n m e b o e v
+4. マンデー ・ y n a m o d
 
 level 2 words:
-1. アイデア ・ i e d a
-2. ベーク ・ a k e b
-3. ホープ ・ p e h o
-4. ウォーク ・ k l a w
+1. ディナー ・ e i n n d r
+2. アップル ・ p a e p l
+3. ゲーム ・ g e a m
+4. ブック ・ k o o b
 
 level 3 words:
-1. ベーカリー ・ y b k e r a
-2. ノー ・ k o w n
-3. ストーリー ・ t r s y o
-4. ブックレット ・ o l e b k t o
+1. ベーカリー ・ y k a b r e
+2. ノー ・ o n w k
+3. ストーリー ・ r s y o t
+4. ブックレット ・ o o l k b t e
 
 level 4 words:
-1. チョイス ・ c o c i h e
-2. プログラム ・ m r p o a r g
-3. メモリアル ・ i e m r m l a o
-4. ショック ・ c k o h s
+1. チョイス ・ h c o e i c
+2. プログラム ・ a o g m p r r
+3. メモリアル ・ i e m o r m l a
+4. ショック ・ h k o c s
 
 level 5 words:
-1. ハリテージ ・ t a r i h e e g
-2. アスペッシュ ・ i y e c p a s l l e
+1. ハリテージ ・ e a e i t r h g
+2. アスペッシュ ・ p s l l e e i a c y
 
