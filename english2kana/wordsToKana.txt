@@ -1,0 +1,8 @@
+dishes
+always
+usually
+exercise
+get-up
+breakfast
+homework
+watch-TV
