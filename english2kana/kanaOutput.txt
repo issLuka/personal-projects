@@ -1,0 +1,8 @@
+ディッシャス  -  ['dishes']
+アウルウェイス  -  ['always']
+ユジオリー  -  ['usually']
+エクササイズ  -  ['exercise']
+ゲットアップ  -  ['get-up']
+ブレックファスト  -  ['breakfast']
+ホームワーク  -  ['homework']
+ウォッチ  -  ['watch-TV']
