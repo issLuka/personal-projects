@@ -1,8 +1,8 @@
-dishes
-always
-usually
-exercise
-get-up
-breakfast
-homework
-watch-TV
+brush
+teeth
+cat
+sometimes
+eat-dinner
+lunch
+Wednesday
+December
