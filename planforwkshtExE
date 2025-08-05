@@ -1,0 +1,20 @@
+make file to hold all the .py scripts for 1: soundout-creator(thing that mixes words and adds kana sound) 2: english -> kana and possible 3: sentence mixer
+create GUI that allows you to first select which function you want to use (soundout wksht maker, simple English to Kana, sentence maker (not yet done)
+  soundoutmaker:
+    add warning that words shorter than 4 characters (dog, cat, etc) may come out unscrambled, feel free to run again in this case.
+    add warning that sometimes the kana output is a little off, advise looking through to make sure the kana actually sounds like it's english counterpart
+  englishtokana:
+    add warning that the kana output sometimes sounds a little off, advise checking to make sure it sounds like english counterpart
+  (ATM)sentence maker:
+    output not done yet - tbf
+add spinning cat gif for loading
+when complete display 'done!' and promp user to quit
+
+figure out how to make exe utilize multiple files - how to add depecency of e2k to exe
+make super basic silly icon for program 
+add screenshot examples of what the input files SHOULD look like, in photoshop, highlight to make sure there's a space between each 4 word break - soundout
+compile scripts together into executable, pack the files together with the exe, make a zip file that includes them all together and finish upload to github
+
+eventually finish the sentence randomizer and properly add that in
+
+
