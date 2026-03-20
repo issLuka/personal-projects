@@ -4,6 +4,8 @@
 ## doing/done:
 ### automation script (maybe make exe program) for automaking the creation of a sound out activity <sup>1</sup>
   - *mostly done, but adding to and changing occasionally* **_in python_**
+  - ### *Browser version*
+    - decided to turn into browser based application so my coworkers can also use the tool
 ### script to make english words into katakana pronunciation <sup>1</sup>
   - *done* **_in python_**
 ### script for randomizing sentences
