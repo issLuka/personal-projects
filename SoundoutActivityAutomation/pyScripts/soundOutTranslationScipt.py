@@ -11,8 +11,8 @@ g2p = G2p() #initializing the g2p converter
 pronunciationList = [] #sets up list for pronunciations
 soundOutList = [] #sets up list for words
 #------------------------------------------------------------------------------
-pathIn = './txtFiles/SoundOutInput.txt' #path to the input file, change if needed
-pathOut = './txtFiles/soundOutput.txt' #path to the output file, change if needed
+pathIn = '../txtFiles/SoundOutInput.txt' #path to the input file, change if needed
+pathOut = '../txtFiles/soundOutput.txt' #path to the output file, change if needed
 
 with open(pathIn, "r") as file: #reads file and puts to list, removing whitespace. "r" is for read only
     for line in file:
