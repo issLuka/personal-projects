@@ -5,7 +5,7 @@
 ### automation script (maybe make exe program) for automaking the creation of a sound out activity <sup>1</sup>
   - *mostly done, but adding to and changing occasionally* **_in python_**
   - ### *Browser version*
-    - decided to turn into browser based application so my coworkers can also use the tool
+    - decided to turn into browser based application so my coworkers can also use the tool [moved to seperate repo(https://github.com/issLuka/Sound-out-activity)
 ### script to make english words into katakana pronunciation <sup>1</sup>
   - *done* **_in python_**
 ### script for randomizing sentences
@@ -13,7 +13,7 @@
 
 ## want to do:
 - would like to try to make a script or program to fetch now playing in spotify and display in a lil gui thingy
-- get better at c++, python and java, maybe learn rust or ruby
+- get better at c++, python and java/JS, maybe learn rust or ruby
 
 ### extras:
 - testing is, well for testing stuff
